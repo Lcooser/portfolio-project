@@ -5,6 +5,17 @@
     list-style: none;
 }
 
+
+@keyframes scaleAnim {
+    0%{
+        transform: translateY(-100%) scale(0);
+    }
+
+    100%{
+        transform: translateY(0) scale(1);
+    }
+}
+
 :root{
     --color-primary: #191d2b;
     --color-secondary: #27AE60;
@@ -90,6 +101,8 @@ section{
 
 .active{
     display: block;
+    animation: scaleAnim 1s ease-in-out;
+    
 }
 
 /* Controls */
